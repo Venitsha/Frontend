@@ -16,13 +16,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Sanne 't Hooft (vervangen door jouw naam)
+  Venitsha Lieverse (vervangen door jouw naam)
 
   #### Je startniveau:
-  hier je startniveau (kies uit zwart, rood óf blauw)
+   Blauw (kies uit zwart, rood óf blauw)
 
   #### Je focus:
-  hier je focus (kies uit responsive óf surface plane)
+  surface plane
+  - Video/Geluid
+  - Custom themes (bijv. Halloween, kerst...)
+  - Lettergrootte kunnen instellen
+  - Animaties (loading, nadruk, feedback, branding...) 
+  - Scroll animaties (animation-timeline, intersection observer...)
  
 </details>
 
@@ -36,15 +41,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+  https://lolo.amsterdam 
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/homepagina.png" width="375px" alt="home pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/2e-scherm.png" width="375px" alt="kerst en oud & nieuw planning.">
  
 </details>
 
@@ -56,7 +61,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+ De site is goed te gebruiken met de voiceover functie. 
+ Alle koppen en linkjes werden in de juiste volgorde opgelezen. 
+ Ik heb geen fouten of problemen gevonden tijdens het doornemen van de website.
 
 </details>
 
