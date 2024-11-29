@@ -1,31 +1,118 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
 }
-
-
-
-
-
 
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text: #ffffff;
+	--color-background: #334D3A;
+	--color-background-2: #ffffff;
 }
 
-
-
-
+* {
+	margin: 0;
+	padding: 0;
+}
 
 /****************/
 /* JOUW STYLING */
 /****************/
 
 /* jouw code */
+@font-face {
+	font-family: 'open-sans';
+	src: url('/fonts/open-sans-v13-latin-regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
 
+}
+
+header {
+	position: sticky;
+	top: 0;
+}
+
+nav ul {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: var(--color-background);
+}
+
+nav img {
+	height: auto;
+	width: 2em;
+}
+
+nav li {
+	list-style-type: none;
+	text-align: center;
+	font-weight: 900;
+}
+
+body {
+	background-color: var(--color-background);
+	color: var(--color-text);
+	font-family: 'open-sans', sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+body p {
+	font-weight: 300;
+}
+
+body h1,
+h2 {
+	font-family: 'Didot', sans-serif;
+}
+
+body h1 {
+	background-color: var(--color-background-2);
+	color: var(--color-background);
+	padding: .3em;
+}
+
+.restaurant {
+	background-color: var(--color-background-2);
+	display: grid;
+	grid-row-gap: 2em;
+	grid-template-columns: 1fr;
+	justify-items: center;
+	overflow: hidden;
+}
+
+.restaurant h2 {
+	color: var(--color-background);
+}
+
+.restaurant img {
+	width: 90%;
+	height: auto;
+}
+
+
+section:nth-of-type(2) {
+	justify-items: center;
+
+}
+
+article {
+	color: var(--color-background);
+	background-color: var(--color-background-2);
+	width: 90%;
+	padding: 2em;
+}
+
+article a {
+	background-color: #334d3a8f;
+	color: var(--color-background);
+	text-decoration: none;
+}
