@@ -15,6 +15,10 @@
 	--color-text: #ffffff;
 	--color-background: #334D3A;
 	--color-background-2: #ffffff;
+	--color-footer-p:#98a59c;
+	--color-footer-h:#334c3a;
+	--color-note:#94A494;
+	--color-note-text:#555f55;
 }
 
 * {
@@ -40,22 +44,42 @@ header {
 	top: 0;
 }
 
+header p {
+	background-color:var(--color-note) ;
+	color:var(--color-note-text);
+	font-size: .7em;
+	text-align: center;
+	padding: 1.1em 0em;
+}
+
 nav ul {
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
 	background-color: var(--color-background);
+	padding: .6em .6em .3em .6em;
+	box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.095);
 }
 
 nav img {
 	height: auto;
-	width: 2em;
+	width: 60%;
+}
+
+nav ul li:nth-of-type(3) {
+	padding-right: 2.7em;
 }
 
 nav li {
 	list-style-type: none;
 	text-align: center;
 	font-weight: 900;
+}
+
+nav p{
+	font-size: .6em;
+	color: var(--color-text);
+	background-color:var(--color-background);
+	padding: 0em 0em;
 }
 
 body {
@@ -67,6 +91,7 @@ body {
 
 body p {
 	font-weight: 300;
+	
 }
 
 body h1,
@@ -74,41 +99,151 @@ h2 {
 	font-family: 'Didot', sans-serif;
 }
 
+video {
+	width: 100%;
+	height: auto;
+}
+
+section:nth-of-type(1){
+	color: var(--color-background);
+	padding: .9em;
+	font-size: .8em;
+}
+
 body h1 {
 	background-color: var(--color-background-2);
 	color: var(--color-background);
-	padding: .3em;
+	padding: .9em
 }
 
-.restaurant {
+section:nth-of-type(2) {
+	padding: 0em 1.5em 8em .8em;
+}
+
+section:nth-of-type(2) h2 {
+	padding: 1em 0em .8em 0em;
+}
+
+
+h2 {
+	padding:0em .8em 0em .6em; 
+}
+
+
+
+
+/* https://www.w3schools.com/howto/howto_js_slideshow.asp */
+
+section:nth-of-type(3) {
+    position: relative;
+    margin: auto;
+	padding: 1.5em .8em 8.5em .8em;
+}
+
+button {
+    cursor: pointer;
+    position: absolute;
+    top: 30%;
+    width: auto;
+    padding: .8em;
+    color: var(--color-background);
+	background-color: rgba(255, 255, 255, 0.55);
+    font-weight: bold;
+    font-size: 1em;
+	border: none;
+}
+
+button:nth-of-type(2) {
+    right: .8em;
+}
+
+section:nth-of-type(3) ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    overflow: hidden;
+}
+
+section:nth-of-type(3) li {
+    display: none;
+}
+
+section:nth-of-type(3) li img {
+    width: 100%;
+    height: auto;
+}
+
+section:nth-of-type(3) li.active {
+    display: block;
+}
+
+section:nth-of-type(4){
+	padding: 0em 1em 5em 1em;
+}
+
+section:nth-of-type(4) p{
+	padding: .7em 0
+}
+section p{
+	line-height: 1.6em;
+}
+
+
+
+
+
+
+
+
+section:nth-of-type(5) {
 	background-color: var(--color-background-2);
 	display: grid;
 	grid-row-gap: 2em;
 	grid-template-columns: 1fr;
-	justify-items: center;
+	/* justify-items: center; */
 	overflow: hidden;
+	padding: 0em 1em;
 }
 
-.restaurant h2 {
+section:nth-of-type(5) h2{
 	color: var(--color-background);
+	padding: 3em 0em 0em 0em;
 }
 
-.restaurant img {
-	width: 90%;
+section:nth-of-type(5) img{
+	width: 100%;
 	height: auto;
 }
 
 
-section:nth-of-type(2) {
-	justify-items: center;
 
+
+
+
+
+
+
+
+
+section:nth-of-type(6) {
+	display: grid;
+	grid-row-gap: 1em;
+	padding: 5em .8em 0em .8em;
+}
+
+section:nth-of-type(6) h2{
+	padding: 0em 0em .5em 0em;
 }
 
 article {
 	color: var(--color-background);
 	background-color: var(--color-background-2);
-	width: 90%;
-	padding: 2em;
+	padding: 2.9em;
+}
+
+article h2 {
+	font-size: 1.25em;
 }
 
 article a {
@@ -116,3 +251,94 @@ article a {
 	color: var(--color-background);
 	text-decoration: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section:nth-of-type(7){
+	text-align: center;
+	padding: 17em 1em 0em 0em;
+}
+
+section:nth-of-type(7) p{
+	padding: 3em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+	background-color: var(--color-background-2);
+	color: var(--color-footer-p);
+	padding: 0em 1.5em 7em 1.5em;
+}
+
+footer ul{
+	list-style-type: none;
+}
+
+footer li{
+	line-height: 1.75em;
+}
+
+footer a{
+	color: var(--color-footer-p);
+}
+
+footer h3 {
+	color: var(--color-footer-h);
+	font-family: 'Didot', sans-serif;
+	font-size: 1.25em;
+	padding: 1.7em 0em 0em 0;
+}
+
+footer p {
+	color: var(--color-footer-h);
+	font-size: 1em;
+}
+
+footer ul {
+	padding-top: 1.2em;
+}
+
+
+
+
+

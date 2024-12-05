@@ -1,25 +1,38 @@
 // JavaScript Document
 console.log("hi");
+ 
 
-const slides = document.querySelectorAll('main > ul li');
-let currentIndex = 0;
+// https://www.w3schools.com/howto/howto_js_slideshow.asp  slider
 
-const updateCarousel = () => {
-  slides.forEach((slide, index) => {
-    slide.style.transform = `translateX(${(index - currentIndex) * 100}%)`;
-  });
-  document.getElementById('prev').disabled = currentIndex === 0;
-  document.getElementById('next').disabled = currentIndex === slides.length - 1;
-};
+document.addEventListener("DOMContentLoaded", function () {
+    let currentIndex = 0;
+    const images = document.querySelectorAll("section:nth-of-type(3) ul li");
+    const prevButton = document.querySelector("button.prev");
+    const nextButton = document.querySelector("button.next");
 
-document.getElementById('prev').addEventListener('click', () => {
-  if (currentIndex > 0) currentIndex--;
-  updateCarousel();
+    // Functie om de actieve afbeelding te tonen
+    function showImage(index) {
+        // Verberg alle afbeeldingen
+        images.forEach((image, i) => {
+            image.classList.remove("active");
+        });
+        
+        // Zorg ervoor dat de afbeelding op de huidige index wordt weergegeven
+        images[index].classList.add("active");
+    }
+
+    // Functie om de vorige afbeelding weer te geven
+    prevButton.addEventListener("click", function () {
+        currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
+        showImage(currentIndex);
+    });
+
+    // Functie om de volgende afbeelding weer te geven
+    nextButton.addEventListener("click", function () {
+        currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+        showImage(currentIndex);
+    });
+
+    // Initieel de eerste afbeelding tonen
+    showImage(currentIndex);
 });
-
-document.getElementById('next').addEventListener('click', () => {
-  if (currentIndex < slides.length - 1) currentIndex++;
-  updateCarousel();
-});
-
-updateCarousel();

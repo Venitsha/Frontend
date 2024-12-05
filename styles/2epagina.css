@@ -1,0 +1,159 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text: #ffffff;
+	--color-background: #334D3A;
+	--color-background-2: #ffffff;
+	--color-footer-p:#98a59c;
+	--color-footer-h:#334c3a;
+	--color-note:#94A494;
+	--color-note-text:#555f55;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+/* jouw code */
+@font-face {
+	font-family: 'open-sans';
+	src: url('/fonts/open-sans-v13-latin-regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+h1{
+    font-family: 'Didot', sans-serif;
+    text-transform: uppercase;
+    font-size: 5em;
+}
+
+body {
+	background-color: var(--color-background);
+	color: var(--color-text);
+	font-family: 'open-sans', sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+header p {
+	background-color:var(--color-note) ;
+	color:var(--color-note-text);
+	font-size: .7em;
+	text-align: center;
+	padding: 1.1em 0em;
+}
+
+nav ul {
+	display: flex;
+	align-items: center;
+	background-color: var(--color-background);
+	padding: .6em .6em .3em .6em;
+	box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.095);
+}
+
+nav img {
+	height: auto;
+	width: 60%;
+}
+
+nav ul li:nth-of-type(3) {
+	padding-right: 2.7em;
+}
+
+nav li {
+	list-style-type: none;
+	text-align: center;
+	font-weight: 900;
+}
+
+nav p{
+	font-size: .6em;
+	color: var(--color-text);
+	background-color:var(--color-background);
+	padding: 0em 0em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+	background-color: var(--color-background-2);
+	color: var(--color-footer-p);
+	padding: 0em 1.5em 7em 1.5em;
+}
+
+footer ul{
+	list-style-type: none;
+}
+
+footer li{
+	line-height: 1.75em;
+}
+
+footer a{
+	color: var(--color-footer-p);
+}
+
+footer h3 {
+	color: var(--color-footer-h);
+	font-family: 'Didot', sans-serif;
+	font-size: 1.25em;
+	padding: 1.7em 0em 0em 0;
+}
+
+footer p {
+	color: var(--color-footer-h);
+	font-size: 1em;
+}
+
+footer ul {
+	padding-top: 1.2em;
+}
