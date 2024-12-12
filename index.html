@@ -9,46 +9,66 @@
 	<title>Howdy FED2425</title>
 
 	<link href="styles/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="styles/styles-general.css">
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 
 <body>
 	<header>
-		<p><strong>On Friday and Saturday the kitchen is open till</strong></p>
+		<aside>
+			<p><strong>On Friday and Saturday the kitchen is open till 23:00, all other days the kitchen closes at
+					22:30.
+					Please note that due to our open kitchen and strict food safety requirements, it is unfortunately
+					not
+					allowed to bring pets.
+				</strong></p>
+		</aside>
 		<nav>
 			<ul>
 				<li>
-					<img src="images/kaart-icoon.svg" alt="de kaart">
+					<a href="">
+						<img src="images/kaart-icoon.svg" alt="Food menu icon">
+						<p>
+							CARD
+						</p>
 					</a>
-					<p>
-						CARD
-					</p>
+
 				</li>
 				<li>
-					<img src="images/lolo-telefoon.svg" alt="contact">
+					<a href="">
+						<img src="images/lolo-telefoon.svg" alt="Phone icon">
+
+						<p>
+							CALL
+						</p>
 					</a>
-					<p>
-						CALL
-					</p>
+
 				</li>
 				<li>
-					<img src="images/lolo-logo.png" alt="logo lolo amsterdam">
+					<a href="index.html">
+						<img src="images/lolo-logo.png" alt="Lolo's logo">
 					</a>
+
 				</li>
 				<li>
-					<img src="images/menu-icoon.svg" alt="menu">
+					<a href="menu.html">
+						<img src="images/menu-icoon.svg" alt="Menu">
+						<p>
+							MENU
+						</p>
 					</a>
-					<p>
-						MENU
-					</p>
 				</li>
 			</ul>
 		</nav>
 	</header>
 	<main>
+		
 		<section>
-			<video autoplay>
-				<source src="images/lolo-intro-film.mp4" type="video/mp4" />
+			<!-- https://www.w3schools.com/tags/att_video_muted.asp -->
+			<!-- https://www.w3schools.com/tags/att_video_loop.asp -->
+			<video controls loop muted>
+				<source src="images/lolo-intro-film.mp4" type="video/mp4"/>
+				Your browser does not support the video tag.
 			</video>
 			<h1>
 				Benvenuti da Lolo! Your new favourite Italian in Amsterdam.
@@ -68,19 +88,23 @@
 				vibe.
 			</p>
 		</section>
-		<h2>
-			Chi mangia solo crepa solo
-		</h2>
+
 		<section>
+			<h2>
+				Chi mangia solo crepa solo
+			</h2>
 			<ul>
-				<li><img src="images/gerecht.jpg" alt=""></li>
-				<li><img src="images/gerecht1.jpg" alt=""></li>
-				<li><img src="images/gerecht2.jpg" alt=""></li>
+				<li><img src="images/gerecht.jpg" alt="Dish"></li>
+				<li><img src="images/gerecht1.jpg" alt="Dish"></li>
+				<li><img src="images/gerecht2.jpg" alt="Dish"></li>
 			</ul>
 			<button class="prev">prev</button>
 			<button class="next">next</button>
 		</section>
 		<section>
+			<h2>
+				Information
+			</h2>
 			<p>
 				Welcome to Lolo's Italian restaurant, where we passionately bring the
 				flavors of Italy to life. Dishes such as creamy burrata, risotto al
@@ -101,10 +125,10 @@
 			<h2>
 				Anteprima
 			</h2>
-			<img src="images/foto-restaurant.jpg" alt="">
-			<img src="images/foto-restaurant1.jpg" alt="">
-			<img src="images/foto-restaurant2.jpg" alt="">
-			<a href="Follow us at Instagram"></a>
+			<img src="images/foto-restaurant.jpg" alt="Restaurant Lolo">
+			<img src="images/foto-restaurant1.jpg" alt="Restaurant Lolo">
+			<img src="images/foto-restaurant2.jpg" alt="Restaurant Lolo">
+			<a href="">Follow us at Instagram</a>
 		</section>
 		<section>
 			<h2>
@@ -151,7 +175,33 @@
 		</section>
 	</main>
 	<footer>
+		<ul>
+			<li>
+				<a href="">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="40px" height="40px">
+						<path
+							d="M15,3C8.373,3,3,8.373,3,15c0,6.016,4.432,10.984,10.206,11.852V18.18h-2.969v-3.154h2.969v-2.099c0-3.475,1.693-5,4.581-5 c1.383,0,2.115,0.103,2.461,0.149v2.753h-1.97c-1.226,0-1.654,1.163-1.654,2.473v1.724h3.593L19.73,18.18h-3.106v8.697 C22.481,26.083,27,21.075,27,15C27,8.373,21.627,3,15,3z" />
+					</svg>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="40px" height="40px">
+						<path
+							d="M 16.5 5 C 10.16639 5 5 10.16639 5 16.5 L 5 31.5 C 5 37.832757 10.166209 43 16.5 43 L 31.5 43 C 37.832938 43 43 37.832938 43 31.5 L 43 16.5 C 43 10.166209 37.832757 5 31.5 5 L 16.5 5 z M 16.5 8 L 31.5 8 C 36.211243 8 40 11.787791 40 16.5 L 40 31.5 C 40 36.211062 36.211062 40 31.5 40 L 16.5 40 C 11.787791 40 8 36.211243 8 31.5 L 8 16.5 C 8 11.78761 11.78761 8 16.5 8 z M 34 12 C 32.895 12 32 12.895 32 14 C 32 15.105 32.895 16 34 16 C 35.105 16 36 15.105 36 14 C 36 12.895 35.105 12 34 12 z M 24 14 C 18.495178 14 14 18.495178 14 24 C 14 29.504822 18.495178 34 24 34 C 29.504822 34 34 29.504822 34 24 C 34 18.495178 29.504822 14 24 14 z M 24 17 C 27.883178 17 31 20.116822 31 24 C 31 27.883178 27.883178 31 24 31 C 20.116822 31 17 27.883178 17 24 C 17 20.116822 20.116822 17 24 17 z" />
+					</svg>
+				</a>
 
+			</li>
+			<li>
+				<a href="">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="45px" height="45px">
+						<path
+							d="M 9.6113281 5 C 7.0767063 5 5 7.0767063 5 9.6113281 L 5 22.388672 C 5 24.923294 7.0767063 27 9.6113281 27 L 22.388672 27 C 24.923294 27 27 24.923294 27 22.388672 L 27 9.6113281 C 27 7.0767063 24.923294 5 22.388672 5 L 9.6113281 5 z M 9.6113281 7 L 22.388672 7 C 23.84205 7 25 8.15795 25 9.6113281 L 25 22.388672 C 25 23.84205 23.84205 25 22.388672 25 L 9.6113281 25 C 8.15795 25 7 23.84205 7 22.388672 L 7 9.6113281 C 7 8.15795 8.15795 7 9.6113281 7 z M 17 9 L 17 19 C 17 20.116666 16.116666 21 15 21 C 13.883334 21 13 20.116666 13 19 C 13 17.883334 13.883334 17 15 17 L 15 15 C 12.802666 15 11 16.802666 11 19 C 11 21.197334 12.802666 23 15 23 C 17.197334 23 19 21.197334 19 19 L 19 12.888672 C 19.827834 13.529766 20.809277 13.98411 21.927734 14 L 21.957031 12 C 20.310764 11.976611 19 10.654231 19 9 L 17 9 z" />
+					</svg>
+				</a>
+			</li>
+		</ul>
 		<h3>Contact</h3>
 		<ul>
 			<li>Oudekerksplein 48</li>
@@ -159,34 +209,34 @@
 			<li>Nederland!</li>
 		</ul>
 		<ul>
-			<a href="">
-				<li>+31 (0) 20 244 57 46</li>
-			</a>
-			<a href="">
-				<li>info@lolo.amsterdam</li>
-			</a>
+			<li>
+				<a href="">+31 (0) 20 244 57 46</a>
+			</li>
+			<li>
+				<a href="">info@lolo.amsterdam</a>
+			</li>
 		</ul>
 		<h3>Information</h3>
 		<ul>
-			<a href="">
-				<li>Home</li>
-			</a>
-			<a href="">
-				<li>Groups & Events</li>
-			</a>
-			<a href="">
-				<li>Christmas & New Year's Eve</li>
-			</a>
+			<li>
+				<a href="">Home</a>
+			</li>
+			<li>
+				<a href="">Groups & Events</a>
+			</li>
+			<li>
+				<a href="">Christmas & New Year's Eve</a>
+			</li>
 		</ul>
 		<h3>Opening hours</h3>
 		<ul>
-			<li><strong>Monday</strong> 1730 - 0100</li>
-			<li><strong>Tuesday</strong> 1730 - 0100</li>
-			<li><strong>Wednesday</strong> 1730 - 0100</li>
-			<li><strong>Thursday</strong> 1730 - 0100</li>
-			<li><strong>Friday</strong> 1730 - 0200</li>
-			<li><strong>Saturday</strong> 1300 - 1630 & 1730 - 0200</li>
-			<li><strong>Sunday</strong> 1300 - 1630 & 1730 - 0100</li>
+			<li><strong>Monday</strong> 17:30 - 01:00</li>
+			<li><strong>Tuesday</strong> 17:30 - 01:00</li>
+			<li><strong>Wednesday</strong> 17:30 - 01:00</li>
+			<li><strong>Thursday</strong> 17:30 - 01:00</li>
+			<li><strong>Friday</strong> 17:30 - 02:00</li>
+			<li><strong>Saturday</strong> 13:00 - 16:30 & 17:30 - 02:00</li>
+			<li><strong>Sunday</strong> 13:00 - 16:30 & 17:30 - 01:00</li>
 		</ul>
 		<ul>
 			<li><strong>Phone Availability :</strong></li>

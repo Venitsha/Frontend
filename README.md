@@ -16,18 +16,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Venitsha Lieverse (vervangen door jouw naam)
+  Venitsha Lieverse
 
   #### Je startniveau:
-   Blauw (kies uit zwart, rood óf blauw)
+   Blauw
 
   #### Je focus:
   surface plane
-  - Video/Geluid
-  - Custom themes (bijv. Halloween, kerst...)
-  - Lettergrootte kunnen instellen
-  - Animaties (loading, nadruk, feedback, branding...) 
-  - Scroll animaties (animation-timeline, intersection observer...)
+  - Animaties (loading, nadruk, feedback, branding...)
+  - preferce-reduced-motion
+  - States van controls++ (forms, inputs, links...)
+  - Custom properties (meer dan alleen kleur)
+  - Svg stylen en animeren
  
 </details>
 
@@ -75,13 +75,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdown-schets3.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/breakdown-schets1.png" width="375px" alt="breakdown van slider">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/breakdown-schets.png" width="375px" alt="breakdown van articals">
 
 </details>
 
@@ -96,6 +96,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   De html van de pagina overnemen ging goed.
+  Nog niet begonnen met css
 
 
   ### Agenda voor meeting
@@ -130,7 +131,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Begin van de css gaat goed, gebruik van de :root gaat
+  ook goed. Ik weet niet zo goed hoe ik mijn html moet positioneren.
 
 
   ### Agenda voor meeting
@@ -153,7 +155,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 </details>
 
 
-alles ff een sectie terug doen
 
 
 ## Toegankelijkheidstest 2/2 (week 4)
@@ -162,7 +163,9 @@ alles ff een sectie terug doen
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  - De echte website gebruikt alleen een lsi voor de menu pagina. Ik heb nu ook de juiste lists toegevoegd in de header, footer en waar nodig.
+  - De video op de homepage staat standaard op autoplay op de echte site. Ik heb hem gepauseerd als je op de pagina komt en hij loopt automatisch als je hem aan hebt gezet.
+  - Het contrast van de tekst in de footer op de echte site had een behoorlijk lage cijfer. Ik heb het op mijn eigen site een hoger contrast gegeven.
 
 </details>
 
@@ -176,7 +179,8 @@ alles ff een sectie terug doen
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik ben tevreden met wat ik op het moment heb. Ik heb bijna alle css gehad voor de basis opdracht. Ik weet alleen niet hoe ik de h1 moet animeren op mijn 2e pagina.
+  Ik weet ook nog niet zo goed wat ik precies kwa surface plane wil gaan doen.
 
 
   ### Agenda voor meeting
@@ -190,12 +194,9 @@ alles ff een sectie terug doen
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+  - Ik hulp gekregen met wat ik kan gebruiken voor de animatie van de h1. Ik kan daarvoor marquee gebruiken.
+  - Ik ga voor de wat simpelere opties die te kiezen zijn voor de surface plane opdrachten.
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
 
 </details>
 
@@ -213,15 +214,17 @@ alles ff een sectie terug doen
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  
+  Ik heb geleerd hoe je met css het zelfde effect krijgt als met de marquee tag in html.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="/readme-images/tekst-animatie.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+ Ik had enorm veel moeite met het menu juist te krijgen en he heb uiteindelijk toch wel wat van een menu maar niet juist.
+
+  <img src="readme-images/menu.png" width="375px" alt="bummer">
 </details>
 
 
@@ -237,8 +240,9 @@ alles ff een sectie terug doen
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. De code voor de silder op de home page(ik heb er ook javascript bij gebruikt om wat puntjes op de i te zetten alleen kan ik de chat niet terug vinden omdat ik niet ingelogd was)java & css: https://www.w3schools.com/howto/howto_js_slideshow.asp
+  2. Om de video op de home page te kunnen pauseren en te muten heb ik gebruik gemaakt van de volgende bronnen: https://www.w3schools.com/tags/att_video_muted.asp
+	https://www.w3schools.com/tags/att_video_loop.asp 
+  3. Om de h1 op mijn 2e pagina te laten werken maar dan zonder de marquee atribute heb ik de volgende bron gebruikt(Ik heb m ook gebruikt om boven in de note te laten bewegen zodat alles te lezen is. Dit was niet mogelijk bij de originele website): https://medium.com/@attarfarnoosh/an-animated-moving-text-effect-with-toy-story-characters-a8692e887042 
 
 </details>

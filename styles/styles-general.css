@@ -1,0 +1,276 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+
+:root {
+	/* startje */
+	--color-text: #ffffff;
+	--color-background: #334D3A;
+	--color-background-2: #ffffff;
+	--color-footer-p: #334D3A;
+	--color-footer-h: #334c3a;
+	--color-note: #94A494;
+	--color-note-text: #555f55;
+	--base-padding: 1.5em 1.5em 3em 1.5em;
+	--bottom-padding: .6em;
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--color-text: #334D3A;
+		--color-background: #ffffff;
+		--color-background-2: #334D3A;
+		--color-footer-p: #ffffff;
+		--color-footer-h: #ffffff;
+		--color-note: #94A494;
+		--color-note-text: #ffffff;
+	}
+
+	header nav ul li:nth-of-type(3) img {
+		content: url("/images/logo-lolo-green.png");
+
+	}
+
+	header nav ul li:nth-of-type(1) img {
+		content: url("/images/kaart-groen.svg");
+	}
+
+	header nav ul li:nth-of-type(2) img {
+		content: url("/images/telefoon-groen.svg");
+	}
+
+	header nav ul li:nth-of-type(4) img {
+		content: url("/images/menu-groen.svg");
+	}
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+@font-face {
+	font-family: 'open-sans';
+	src: url('/fonts/open-sans-v13-latin-regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+header {
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	background-color: var(--color-note);
+}
+
+/* https://medium.com/@attarfarnoosh/an-animated-moving-text-effect-with-toy-story-characters-a8692e887042 */
+@keyframes move-words {
+	0% {
+		left: 0%;
+	}
+
+	100% {
+		left: -270%;
+	}
+}
+
+aside {
+	font-size: .7em;
+	color: var(--color-note-text);
+	background-color: var(--color-note);
+	padding: .1em 1em 3.5em 1em;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+
+aside p {
+	position: absolute;
+	padding: 1em 3em;
+	text-align: center;
+	animation-name: move-words;
+	animation-duration: 25s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	text-wrap: nowrap;
+	animation-play-state: paused;
+}
+
+aside:hover p {
+	animation-play-state: running;
+}
+
+header nav ul {
+	display: flex;
+	align-items: center;
+	background-color: var(--color-background);
+	padding: .9em .6em .3em .6em;
+	box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.095);
+	justify-content: space-around;
+}
+
+header nav svg {
+	height: auto;
+	width: 2em;
+}
+
+header nav ul li:nth-of-type(1) {
+	justify-content: start;
+}
+
+header nav ul li:nth-of-type(3) {
+	padding-right: 2.7em;
+}
+
+header nav ul li:nth-of-type(3) img {
+	width: 4em;
+}
+
+header nav a:active {
+	text-decoration: none;
+}
+
+header nav li {
+	list-style-type: none;
+	text-align: center;
+	font-weight: 900;
+
+}
+
+header nav p {
+	font-size: .6em;
+	color: var(--color-text);
+	background-color: var(--color-background);
+	padding: 0em 0em;
+}
+
+
+main nav {
+	text-align: center;
+	line-height: 2em;
+	padding-top: 14em;
+}
+
+main nav a {
+	text-decoration: none;
+	color: var(--color-text);
+	font-weight: 600;
+	font-size: .9em;
+}
+
+main nav a:hover {
+	color: var(--color-note-text);
+	transition: .3s;
+}
+
+footer {
+	background-color: var(--color-background-2);
+	color: var(--color-footer-p);
+	padding: 0em 1.5em 7em 1.5em;
+}
+
+footer ul:nth-of-type(1) {
+	display: flex;
+	align-items: center;
+}
+
+footer ul:nth-of-type(1) svg {
+	fill: var(--color-background);
+}
+
+footer ul:nth-of-type(1) li {
+	padding-right: 1em;
+}
+
+footer ul:nth-of-type(1) svg:hover {
+	fill: var(--color-note);
+	animation-name: socials;
+	animation-duration: 2s;
+}
+
+/* Fout melding van eigenschappen: scale en rotate.
+https://chatgpt.com/share/675ac920-1ed8-800d-b8a4-5dccdd0e1d5d */
+@keyframes socials {
+	0% {
+		/* rotate: 0turn;
+		scale: 1; */
+		transform: rotate(0deg) scale(1);
+	}
+
+	50% {
+		/* rotate: 1turn;
+		scale: 2; */
+		transform: rotate(1turn) scale(2);
+	}
+
+	100% {
+		/* rotate: 0turn;
+		scale: 1; */
+		transform: rotate(0deg) scale(1);
+
+	}
+}
+
+@media (prefers-reduced-motion) {
+	footer ul:nth-of-type(1) svg:hover {
+		fill: var(--color-note);
+		animation-name: socials;
+		animation-duration: 2.5s;
+	}
+
+	@keyframes socials {
+		0% {
+			/* scale: 1; */
+			transform: scale(1);
+		}
+
+		100% {
+			/* scale: 1.5; */
+			transform: scale(1.5);
+		}
+
+	}
+}
+
+footer ul {
+	list-style-type: none;
+}
+
+footer li {
+	line-height: 1.75em;
+}
+
+footer a {
+	color: var(--color-footer-p);
+}
+
+footer h3 {
+	color: var(--color-footer-h);
+	font-family: 'Didot', sans-serif;
+	font-size: 1.25em;
+	padding: 1.7em 0em 0em 0;
+}
+
+footer p {
+	color: var(--color-footer-h);
+	font-size: 1em;
+}
+
+footer ul {
+	padding-top: 1.2em;
+}
