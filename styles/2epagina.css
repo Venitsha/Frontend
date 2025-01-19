@@ -42,6 +42,7 @@
 
 }
 
+/* LOPENDE TEKST */
 /* https://medium.com/@attarfarnoosh/an-animated-moving-text-effect-with-toy-story-characters-a8692e887042 */
 div {
 	font-family: 'Didot', sans-serif;
@@ -103,7 +104,8 @@ div h1 {
 	}
 }
 
-h2 {
+/* ALGEMENE STYLING */
+body h2 {
 	font-family: 'Didot', sans-serif;
 }
 
@@ -118,11 +120,25 @@ body p {
 	line-height: 1.6em;
 }
 
-main img {
+body img {
 	width: 100%;
 	height: auto;
 }
 
+main a {
+	background-color: var(--color-note);
+	color: #252925;
+	text-decoration: none;
+	padding: .6em 2em .6em 2em;
+	font-weight: 600;
+	font-size: .9em;
+}
+
+main a:hover {
+	background-color: rgb(109, 140, 109);
+}
+
+/* EERSTE KOP EN ALINEA */
 section:nth-of-type(1) {
 	padding: .8em;
 	color: var(--color-background);
@@ -138,6 +154,7 @@ section:nth-of-type(1) p {
 	padding: 0em 1em 5em 1.5em;
 }
 
+/* TWEEDE KOP, ALINEA EN IMG */
 section:nth-of-type(2) {
 	padding: var(--base-padding);
 }
@@ -155,6 +172,7 @@ section:nth-of-type(2) img {
 	padding-top: 5em;
 }
 
+/* DERDE KOP, ALINE EN IMG */
 section:nth-of-type(3) {
 	padding: var(--base-padding);
 }
@@ -172,6 +190,8 @@ section:nth-of-type(3) img {
 	padding-top: 6em;
 }
 
+
+/* LIJSTJE */
 section:nth-of-type(4) {
 	padding: 3em 1.5em 3em 1.5em;
 }
@@ -186,15 +206,39 @@ section:nth-of-type(4) ul {
 	list-style-type: none;
 }
 
-main a {
-	background-color: var(--color-note);
-	color: #252925;
-	text-decoration: none;
-	padding: .6em 2em .6em 2em;
-	font-weight: 600;
-	font-size: .9em;
-}
+/* RESPONSIVE */
+@media (min-width: 70em){
+	section:nth-of-type(1) {
+		display: flex;
+		padding: 2em;
+		color: var(--color-background);
+	}
+	
+	section:nth-of-type(1) h2 {
+		background-color: var(--color-background-2);
+		padding: 2em 1em .6em 1em;
+		font-size: 2em;
+	}
+	
+	section:nth-of-type(1) p {
+		background-color: var(--color-background-2);
+		padding: 3em .9em 5em 1.5em;
+	}
 
-main a:hover {
-	background-color: rgb(109, 140, 109);
+	section:nth-of-type(1) img {
+		width: 50%;
+		height: auto;
+	}
+
+	section:nth-of-type(2) {
+		padding: 1.5em 7.5em 3em 7.5em;
+	}
+
+	section:nth-of-type(3) {
+		padding: 1.5em 7.5em 3em 7.5em;
+	}
+
+	section:nth-of-type(4) {
+		padding: 3em 7.5em 5em 7.5em;
+	}
 }

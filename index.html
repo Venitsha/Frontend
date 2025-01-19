@@ -6,15 +6,48 @@
 	<meta name="author" content="jouw naam">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Howdy FED2425</title>
+	<title>Home | Lolo Amsterdam | Lolo</title>
 
 	<link href="styles/style.css" rel="stylesheet">
 	<link rel="stylesheet" href="styles/styles-general.css">
-	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+	<link rel="icon" type="image/svg+xml" href="images/lolo-weblogo.png">
 </head>
 
 <body>
 	<header>
+
+		<nav>
+			<ul>
+				<li>
+					<a href="index.html">
+						<img src="images/lolo-logo.png" alt="Lolo's logo">
+					</a>
+
+				</li>
+				<li>
+					<a href="">
+						<img src="./images/kaart-icoon.svg" alt="Food menu icon">
+						card
+					</a>
+
+				</li>
+				<li>
+					<a href="">
+						<img src="./images/lolo-telefoon.svg" alt="Phone icon">
+						call
+					</a>
+
+				</li>
+				
+				<li>
+					<a href="menu.html">
+						<img src="./images/menu-icoon.svg" alt="Menu">
+						menu
+					</a>
+				</li>
+			</ul>
+		</nav>
+
 		<aside>
 			<p><strong>On Friday and Saturday the kitchen is open till 23:00, all other days the kitchen closes at
 					22:30.
@@ -23,57 +56,22 @@
 					allowed to bring pets.
 				</strong></p>
 		</aside>
-		<nav>
-			<ul>
-				<li>
-					<a href="">
-						<img src="./images/kaart-icoon.svg" alt="Food menu icon">
-						<p>
-							CARD
-						</p>
-					</a>
-
-				</li>
-				<li>
-					<a href="">
-						<img src="./images/lolo-telefoon.svg" alt="Phone icon">
-
-						<p>
-							CALL
-						</p>
-					</a>
-
-				</li>
-				<li>
-					<a href="index.html">
-						<img src="images/lolo-logo.png" alt="Lolo's logo">
-					</a>
-
-				</li>
-				<li>
-					<a href="menu.html">
-						<img src="./images/menu-icoon.svg" alt="Menu">
-						<p>
-							MENU
-						</p>
-					</a>
-				</li>
-			</ul>
-		</nav>
 	</header>
 	<main>
 		
 		<section>
+			<h1>
+				Benvenuti da Lolo! Your new favourite Italian in Amsterdam.
+			</h1>
 			<!-- https://www.w3schools.com/tags/att_video_muted.asp -->
 			<!-- https://www.w3schools.com/tags/att_video_loop.asp -->
 			<video controls loop muted>
 				<source src="images/lolo-intro-film.mp4" type="video/mp4"/>
 				Your browser does not support the video tag.
 			</video>
-			<h1>
-				Benvenuti da Lolo! Your new favourite Italian in Amsterdam.
-			</h1>
+			
 		</section>
+
 		<section>
 			<h2>
 				About Us
@@ -102,7 +100,7 @@
 			<button class="next">next</button>
 		</section>
 		<section>
-			<h2>
+			<h2 class="visually-hidden">
 				Information
 			</h2>
 			<p>
@@ -118,25 +116,34 @@
 				Italy is not only tasted in our dishes but also in our cocktails.
 				For the aficionados, we have unique creations like Limon Tette, a
 				Baciami, or a Negroni - classic or with a twist. At Lolo, the quality
-				of taste is paramount, both in our dishes and in Lolo’s cocktails.
+				of taste is paramount, both in our dishes and in Lolo's cocktails.
 			</p>
 		</section>
 		<section>
 			<h2>
 				Anteprima
 			</h2>
-			<img src="images/foto-restaurant.jpg" alt="Restaurant Lolo">
-			<img src="images/foto-restaurant1.jpg" alt="Restaurant Lolo">
-			<img src="images/foto-restaurant2.jpg" alt="Restaurant Lolo">
+			<ul>
+				<li>
+					<img src="images/foto-restaurant.jpg" alt="Restaurant Lolo">
+				</li>
+				<li>
+					<img src="images/foto-restaurant1.jpg" alt="Restaurant Lolo">
+				</li>
+				<li>
+					<img src="images/foto-restaurant2.jpg" alt="Restaurant Lolo">
+				</li>
+			</ul>
 			<a href="">Follow us at Instagram</a>
 		</section>
 		<section>
 			<h2>
 				Posto vacante
 			</h2>
+			
 			<article>
+				<h3>General Manager</h3>
 				<p>Cool job application</p>
-				<h2>General Manager</h2>
 				<p>
 					Are you a motivated and experienced
 					<i>capo</i>
@@ -146,13 +153,14 @@
 					driving innovation, and ensuring the highest standards of
 					performance in the Food and Beverage sector.
 				</p>
-				<a href="">
+				<a href="" aria-label="Join the squadra as general manager">
 					Join the squadra
 				</a>
 			</article>
+
 			<article>
+				<h3>Waiter & waitress</h3>
 				<p>Cool job application</p>
-				<h2>Waiter & waitress</h2>
 				<p>
 					<i>Hey you!</i>
 					We are always on the lookout for new members for our family.
@@ -162,11 +170,12 @@
 					<i>"A fare l'amore comincia tu",</i>
 					then don't hesitate to get in touch with us.
 				</p>
-				<a href="">
+				<a href="" aria-label="Join the squadra as waiter & waitress">
 					Join the squadra
 				</a>
 			</article>
 		</section>
+
 		<section>
 			<h2>
 				"Mamma Mia: Here I come again!'
@@ -174,7 +183,10 @@
 			<p>Lolo</p>
 		</section>
 	</main>
+
 	<footer>
+
+		<h2 class="visually-hidden">Socials</h2>
 		<ul>
 			<li>
 				<a href="">
@@ -202,12 +214,14 @@
 				</a>
 			</li>
 		</ul>
-		<h3>Contact</h3>
+
+		<h2>Contact</h2>
 		<ul>
 			<li>Oudekerksplein 48</li>
 			<li>1012 GZ Amsterdam</li>
 			<li>Nederland!</li>
 		</ul>
+
 		<ul>
 			<li>
 				<a href="">+31 (0) 20 244 57 46</a>
@@ -216,7 +230,8 @@
 				<a href="">info@lolo.amsterdam</a>
 			</li>
 		</ul>
-		<h3>Information</h3>
+
+		<h2>Information</h2>
 		<ul>
 			<li>
 				<a href="">Home</a>
@@ -228,7 +243,8 @@
 				<a href="">Christmas & New Year's Eve</a>
 			</li>
 		</ul>
-		<h3>Opening hours</h3>
+
+		<h2>Opening hours</h2>
 		<ul>
 			<li><strong>Monday</strong> 17:30 - 01:00</li>
 			<li><strong>Tuesday</strong> 17:30 - 01:00</li>
@@ -238,6 +254,7 @@
 			<li><strong>Saturday</strong> 13:00 - 16:30 & 17:30 - 02:00</li>
 			<li><strong>Sunday</strong> 13:00 - 16:30 & 17:30 - 01:00</li>
 		</ul>
+
 		<ul>
 			<li><strong>Phone Availability :</strong></li>
 			<li><strong>Monday to Friday :</strong></li>
@@ -245,12 +262,14 @@
 			<li><strong>Weekend (Saturday and Sunday) :</strong></li>
 			<li>Available from 4:00 PM to 10:00 PM.</li>
 		</ul>
+
 		<ul>
 			<li>Warmoesstraat 111 B.V.</li>
 			<li>KVK : 34377305</li>
 			<li>BTW : NL8218.87.816.B.01</li>
 		</ul>
 	</footer>
+
 	<script defer src="scripts/script.js"></script>
 </body>
 

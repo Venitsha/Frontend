@@ -22,12 +22,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
    Blauw
 
   #### Je focus:
+
   surface plane
   - Animaties (loading, nadruk, feedback, branding...)
   - preferce-reduced-motion
-  - States van controls++ (forms, inputs, links...)
-  - Custom properties (meer dan alleen kleur)
   - Svg stylen en animeren
+
  
 </details>
 

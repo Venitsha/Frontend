@@ -6,6 +6,8 @@
 *::after,
 *::before {
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 /*********************/
@@ -13,7 +15,6 @@
 /*********************/
 
 :root {
-	/* startje */
 	--color-text: #ffffff;
 	--color-background: #334D3A;
 	--color-background-2: #ffffff;
@@ -54,10 +55,15 @@
 	}
 }
 
-* {
-	margin: 0;
-	padding: 0;
-}
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+  }
 
 /****************/
 /* JOUW STYLING */
@@ -72,42 +78,99 @@
 }
 
 header {
+	display: flex;
+	flex-wrap: wrap;
 	position: sticky;
 	top: 0;
 	z-index: 10;
-	background-color: var(--color-note);
+	background-color: var(--color-background);
 }
 
+header nav {
+	width:100%;
+	box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.095);
+}
+
+/* LIST */
+header nav ul {
+	display: flex;
+	align-items: center;
+	padding: .9em 1.5em .3em 1.6em;
+	column-gap:.5em;
+}
+
+/* LIST ITEM */
+header nav li {
+	list-style-type: none;
+}
+
+header nav ul li:nth-of-type(1) {
+	order:1;
+	margin-inline:auto;
+}
+
+header nav ul li:nth-of-type(4) {
+	order:2;
+}
+
+/* LINKS */
+header nav a {
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+	background-color: var(--color-background);
+	font-size: .6em;
+	color: var(--color-text);
+	text-decoration: none;
+}
+
+header nav a img {
+	height: auto;
+	width: 2rem;
+}
+
+header nav ul li:nth-of-type(1) a img {
+	width: 4rem;
+}
+
+/* LOPENDE TEKST */
 /* https://medium.com/@attarfarnoosh/an-animated-moving-text-effect-with-toy-story-characters-a8692e887042 */
 @keyframes move-words {
 	0% {
-		left: 0%;
+		translate:100vw;
 	}
 
 	100% {
-		left: -270%;
+		translate:-100%;
 	}
 }
 
 aside {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+
 	font-size: .7em;
 	color: var(--color-note-text);
 	background-color: var(--color-note);
 	padding: .1em 1em 3.5em 1em;
-	position: relative;
-	overflow: hidden;
-	width: 100%;
+	
+	order:-1;
 }
 
 aside p {
 	position: absolute;
-	padding: 1em 3em;
 	text-align: center;
+
+	left:0;
+	padding: 1em 3em;
+	text-wrap: nowrap;
+
 	animation-name: move-words;
-	animation-duration: 25s;
+	animation-duration: 15s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
-	text-wrap: nowrap;
+	animation-delay: -.5s;
 	animation-play-state: paused;
 }
 
@@ -115,73 +178,11 @@ aside:hover p {
 	animation-play-state: running;
 }
 
-header nav ul {
-	display: flex;
-	align-items: center;
-	background-color: var(--color-background);
-	padding: .9em .6em .3em .6em;
-	box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.095);
-	justify-content: space-around;
-}
-
-header nav svg {
-	height: auto;
-	width: 2em;
-}
-
-header nav ul li:nth-of-type(1) {
-	justify-content: start;
-}
-
-header nav ul li:nth-of-type(3) {
-	padding-right: 2.7em;
-}
-
-header nav ul li:nth-of-type(3) img {
-	width: 4em;
-}
-
-header nav a:active {
-	text-decoration: none;
-}
-
-header nav li {
-	list-style-type: none;
-	text-align: center;
-	font-weight: 900;
-
-}
-
-header nav p {
-	font-size: .6em;
-	color: var(--color-text);
-	background-color: var(--color-background);
-	padding: 0em 0em;
-}
-
-
-main nav {
-	text-align: center;
-	line-height: 2em;
-	padding-top: 14em;
-}
-
-main nav a {
-	text-decoration: none;
-	color: var(--color-text);
-	font-weight: 600;
-	font-size: .9em;
-}
-
-main nav a:hover {
-	color: var(--color-note-text);
-	transition: .3s;
-}
-
+/* FOOTER */
 footer {
 	background-color: var(--color-background-2);
 	color: var(--color-footer-p);
-	padding: 0em 1.5em 7em 1.5em;
+	padding: 2em 1.5em 7em 1.5em;
 }
 
 footer ul:nth-of-type(1) {
@@ -273,4 +274,23 @@ footer p {
 
 footer ul {
 	padding-top: 1.2em;
+}
+
+/* MENU */
+main nav {
+	text-align: center;
+	line-height: 2em;
+	padding-top: 14em;
+}
+
+main nav a {
+	text-decoration: none;
+	color: var(--color-text);
+	font-weight: 600;
+	font-size: .9em;
+}
+
+main nav a:hover {
+	color: var(--color-note-text);
+	transition: .3s;
 }
